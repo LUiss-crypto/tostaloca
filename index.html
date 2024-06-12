@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tostaloca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>La Tostaloca</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#loyalty">Programa de Fidelización</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Bienvenidos a La Tostaloca</h2>
+            <p>Disfruta de nuestras deliciosas tostadas de plátano con repollo y aderezos únicos.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="product">
+                <h3>Tostada Clásica</h3>
+                <p>Plátano frito con repollo fresco y aderezo de queso.</p>
+            </div>
+            <div class="product">
+                <h3>Tostada Mexicana</h3>
+                <p>Plátano frito con repollo, jalapeños y salsa de aguacate.</p>
+            </div>
+            <div class="product">
+                <h3>Tostada Vegana</h3>
+                <p>Plátano frito con repollo, hummus y pico de gallo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="loyalty">
+        <div class="container">
+            <h2>Programa de Fidelización</h2>
+            <p>Ingresa tu código de fidelización para obtener descuentos especiales y recompensas:</p>
+            <form id="loyaltyForm">
+                <label for="loyaltyCode">Código de Fidelización:</label>
+                <input type="text" id="loyaltyCode" name="loyaltyCode" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="loyaltyMessage"></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 La Tostaloca. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
